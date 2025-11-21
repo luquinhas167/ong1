@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Adoção — Coração Animal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">Coração Animal</a>
+    <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false">☰<span class="sr-only">Abrir menu</span></button>
+    <nav id="mainNav" class="main-nav" role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adocao.html">Adoção</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container" role="main">
+  <header style="display:flex;justify-content:space-between;align-items:center;margin:18px 0;">
+    <h1>Animais para Adoção</h1>
+    <div>
+      <label for="filterType" class="sr-only">Filtrar por tipo</label>
+      <select id="filterType" aria-label="Filtrar animais">
+        <option value="all">Todos</option>
+        <option value="dog">Cães</option>
+        <option value="cat">Gatos</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="grid" aria-live="polite">
+    
+<div class="card card-animal" data-type="dog" role="article">
+  <img src="https://source.unsplash.com/800x600/?dog&sig=1" alt="Foto de Mingau">
+  <h3>Mingau</h3>
+  <p><strong>Idade:</strong> 2 anos • <strong>Porte:</strong> Pequeno</p>
+  <p>Personalidade: carinhoso, sociável e vacinado.</p>
+  <a class="btn" href="form_adocao.html" aria-label="Quero adotar Mingau">Quero Adotar</a>
+</div>
+
+<div class="card card-animal" data-type="cat" role="article">
+  <img src="https://source.unsplash.com/800x600/?dog&sig=2" alt="Foto de Luna">
+  <h3>Luna</h3>
+  <p><strong>Idade:</strong> 1 ano • <strong>Porte:</strong> Médio</p>
+  <p>Personalidade: carinhoso, sociável e vacinado.</p>
+  <a class="btn" href="form_adocao.html" aria-label="Quero adotar Luna">Quero Adotar</a>
+</div>
+
+<div class="card card-animal" data-type="dog" role="article">
+  <img src="https://source.unsplash.com/800x600/?dog&sig=3" alt="Foto de Thor">
+  <h3>Thor</h3>
+  <p><strong>Idade:</strong> 3 anos • <strong>Porte:</strong> Grande</p>
+  <p>Personalidade: carinhoso, sociável e vacinado.</p>
+  <a class="btn" href="form_adocao.html" aria-label="Quero adotar Thor">Quero Adotar</a>
+</div>
+
+<div class="card card-animal" data-type="dog" role="article">
+  <img src="https://source.unsplash.com/800x600/?dog&sig=4" alt="Foto de Bela">
+  <h3>Bela</h3>
+  <p><strong>Idade:</strong> 4 anos • <strong>Porte:</strong> Pequeno</p>
+  <p>Personalidade: carinhoso, sociável e vacinado.</p>
+  <a class="btn" href="form_adocao.html" aria-label="Quero adotar Bela">Quero Adotar</a>
+</div>
+
+<div class="card card-animal" data-type="cat" role="article">
+  <img src="https://source.unsplash.com/800x600/?dog&sig=5" alt="Foto de Pipo">
+  <h3>Pipo</h3>
+  <p><strong>Idade:</strong> 6 meses • <strong>Porte:</strong> Pequeno</p>
+  <p>Personalidade: carinhoso, sociável e vacinado.</p>
+  <a class="btn" href="form_adocao.html" aria-label="Quero adotar Pipo">Quero Adotar</a>
+</div>
+
+<div class="card card-animal" data-type="dog" role="article">
+  <img src="https://source.unsplash.com/800x600/?dog&sig=6" alt="Foto de Nina">
+  <h3>Nina</h3>
+  <p><strong>Idade:</strong> 5 anos • <strong>Porte:</strong> Médio</p>
+  <p>Personalidade: carinhoso, sociável e vacinado.</p>
+  <a class="btn" href="form_adocao.html" aria-label="Quero adotar Nina">Quero Adotar</a>
+</div>
+
+  </section>
+
+  <section style="margin-top:20px;">
+    <h2>Como funciona o processo de adoção</h2>
+    <ol>
+      <li>Enviar o formulário de interesse.</li>
+      <li>Avaliação e visita técnica quando necessária.</li>
+      <li>Assinatura de termo de responsabilidade.</li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>© 2025 Coração Animal — ONG de proteção animal. Fotos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+    <p class="credit">Projeto acadêmico — desenvolvido por estudantes.</p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal" role="dialog" aria-hidden="true">
+  <img src="" alt="Imagem ampliada de animal">
+</div>
+<button id="toTop" aria-label="Voltar ao topo" style="display:none;position:fixed;right:20px;bottom:20px;background:var(--accent);color:#fff;border:none;padding:10px;border-radius:50%;">↑</button>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
