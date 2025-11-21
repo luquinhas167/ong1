@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Coração Animal — ONG de Proteção Animal</title>
+  <meta name="description" content="ONG dedicada ao resgate, tratamento e adoção de animais.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">Coração Animal</a>
+    <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false">☰<span class="sr-only">Abrir menu</span></button>
+    <nav id="mainNav" class="main-nav" role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adocao.html">Adoção</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="voluntariado.html">Voluntariado</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container" id="main-content" role="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div>
+      <h1 id="hero-title">Coração Animal — Resgate, Amor e Adoção</h1>
+      <p class="lead">Ajudamos cães e gatos a encontrarem lares seguros. Conheça nossos animais, doe ou seja voluntário. Juntos transformamos vidas.</p>
+      <div class="cta">
+        <a class="btn" href="adocao.html">Ver animais para adoção</a>
+        <a class="btn secondary" href="doacoes.html">Doar agora</a>
+      </div>
+    </div>
+    <aside aria-label="Imagem de destaque">
+      <img src="https://source.unsplash.com/800x600/?dog&sig=1" alt="Cachorro feliz correndo" style="width:100%;border-radius:12px;box-shadow:var(--shadow)">
+    </aside>
+  </section>
+
+  <section aria-labelledby="destaques" style="margin-top:20px;">
+    <h2 id="destaques">Destaques</h2>
+    <div class="grid">
+      <article class="card" aria-labelledby="card1">
+        <img src="https://source.unsplash.com/800x600/?dog&sig=2" alt="filhote para adoção">
+        <h3 id="card1">Resgates Recentes</h3>
+        <p>Conheça as histórias de animais que foram salvos e estão em processo de recuperação.</p>
+      </article>
+      <article class="card" aria-labelledby="card2">
+        <img src="https://source.unsplash.com/800x600/?dog&sig=3" alt="cachorro deitado">
+        <h3 id="card2">Eventos</h3>
+        <p>Participe das feiras de adoção e campanhas de castração promovidas pela ONG.</p>
+      </article>
+      <article class="card" aria-labelledby="card3">
+        <img src="https://source.unsplash.com/800x600/?dog&sig=4" alt="três filhotes sentados">
+        <h3 id="card3">Como Ajudar</h3>
+        <p>Doações, apadrinhamento ou voluntariado — existem várias formas de contribuir.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="galeria" style="margin-top:24px;">
+    <h2 id="galeria">Galeria</h2>
+    <div class="grid gallery" aria-live="polite">
+      <figure class="card"><img src="https://source.unsplash.com/800x600/?dog&sig=1" alt="Cachorro para adoção 1"><figcaption class="sr-only">Cachorro 1</figcaption></figure><figure class="card"><img src="https://source.unsplash.com/800x600/?dog&sig=2" alt="Cachorro para adoção 2"><figcaption class="sr-only">Cachorro 2</figcaption></figure><figure class="card"><img src="https://source.unsplash.com/800x600/?dog&sig=3" alt="Cachorro para adoção 3"><figcaption class="sr-only">Cachorro 3</figcaption></figure><figure class="card"><img src="https://source.unsplash.com/800x600/?dog&sig=4" alt="Cachorro para adoção 4"><figcaption class="sr-only">Cachorro 4</figcaption></figure><figure class="card"><img src="https://source.unsplash.com/800x600/?dog&sig=5" alt="Cachorro para adoção 5"><figcaption class="sr-only">Cachorro 5</figcaption></figure><figure class="card"><img src="https://source.unsplash.com/800x600/?dog&sig=6" alt="Cachorro para adoção 6"><figcaption class="sr-only">Cachorro 6</figcaption></figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="cta" style="margin-top:24px;padding:18px;background:linear-gradient(90deg, rgba(243,156,18,0.08), rgba(39,174,96,0.04));border-radius:12px">
+    <h2 id="cta">Quer ajudar agora?</h2>
+    <p>Doações e apadrinhamentos ajudam a manter nosso trabalho. Qualquer valor faz diferença.</p>
+    <a class="btn" href="doacoes.html">Doar via PIX</a>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>© 2025 Coração Animal — ONG de proteção animal. Fotos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+    <p class="credit">Projeto acadêmico — desenvolvido por estudantes.</p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal" role="dialog" aria-hidden="true">
+  <img src="" alt="Imagem ampliada de animal">
+</div>
+<button id="toTop" aria-label="Voltar ao topo" style="display:none;position:fixed;right:20px;bottom:20px;background:var(--accent);color:#fff;border:none;padding:10px;border-radius:50%;">↑</button>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
